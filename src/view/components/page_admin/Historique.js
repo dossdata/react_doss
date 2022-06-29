@@ -12,7 +12,7 @@ export default function Historique() {
 < ResponsiveAppBar pages={pages} settings ={settings}/>
       <Card variant="outlined" >        
         <InputLabel  variant="standard" component="h4" style={{textAlign:"center"}}>
-        Historique 
+        Historiques
         </InputLabel>
       </Card>
     </div>
