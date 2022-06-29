@@ -12,7 +12,7 @@ export default function Dossiers() {
          < ResponsiveAppBar pages={pages} settings ={settings}/>
       <Card variant="outlined" >        
         <InputLabel  variant="standard" component="h4" style={{textAlign:"center"}}>
-        Dossier 
+        Dossiers 
         </InputLabel>
       </Card>
    
