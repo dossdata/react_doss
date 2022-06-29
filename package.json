@@ -22,7 +22,7 @@
     "styled-components": "^5.3.5",
     "web-vitals": "^2.1.4"
   },
-"homepage": "https://heryAndriam.github.io/react_doss",
+  "homepage": "https://heryandriam.github.io/react_doss/",
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
