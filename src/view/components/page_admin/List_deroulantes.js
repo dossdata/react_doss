@@ -1,10 +1,21 @@
+import { Card, InputLabel } from '@mui/material'
 import React from 'react'
 import { Link } from 'react-router-dom'
-export default function List_deroulantes() {
-  return (
-    <div>List_deroulantes
+import ResponsiveAppBar from '../asset/Navebar'
 
-<Link to="/admin" className="btn btn-primary">dossier re</Link>
+export default function List_deroulantes() {
+
+  const pages = ['Statistques','Declaration Periodique','Situation dossiers'];
+  const settings = ['Profile', 'Message','Admin','Deconnexion'];
+  return (
+    <div>
+
+< ResponsiveAppBar pages={pages} settings ={settings}/>
+      <Card variant="outlined" >        
+        <InputLabel  variant="standard" component="h4" style={{textAlign:"center"}}>
+        List_deroulantes 
+        </InputLabel>
+      </Card>
     </div>
   )
 }

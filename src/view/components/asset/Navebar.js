@@ -11,8 +11,9 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
+import { Link } from 'react-router-dom';
 
-
+import logo from '../Images/keobiz.jpg'
 const ResponsiveAppBar = ({ pages, settings }) => {
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
@@ -38,7 +39,7 @@ const ResponsiveAppBar = ({ pages, settings }) => {
     <AppBar position="static">
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <Avatar src={"/Images/keobiz.jpg"} variant="rounded" />&nbsp;&nbsp;
+          <Avatar src={logo} variant="rounded" />&nbsp;&nbsp;
           <Typography
             variant="h6"
             noWrap
@@ -127,7 +128,7 @@ const ResponsiveAppBar = ({ pages, settings }) => {
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt="Remy Sharp" src="/static/images/avatar/2.jpg" />
+                <Avatar alt="Remy Sharp" />
               </IconButton>
             </Tooltip>
             <Menu
@@ -148,7 +149,7 @@ const ResponsiveAppBar = ({ pages, settings }) => {
             >
               {settings.map((setting) => (
                 <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign="center">{setting}</Typography>
+                  <Typography textAlign="center">{setting !== "Admin"? setting: <Link to="/">{setting}</Link>}</Typography>
                 </MenuItem>
               ))}
             </Menu>

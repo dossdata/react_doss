@@ -14,9 +14,6 @@ export default function Utilisateurs() {
         Utilisateurs 
         </InputLabel>
       </Card>
-      
-<Link to="/admin" className="btn btn-primary">dossier re</Link>
-
     </div>
   )
 }
