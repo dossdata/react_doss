@@ -8,7 +8,7 @@ export default function Historique() {
   const settings = ['Profile', 'Message','Admin','Deconnexion'];
 
   return (
-    <div>Historique
+    <div>
 < ResponsiveAppBar pages={pages} settings ={settings}/>
       <Card variant="outlined" >        
         <InputLabel  variant="standard" component="h4" style={{textAlign:"center"}}>
